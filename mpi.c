@@ -62,7 +62,7 @@ Embedding get_embedding(const char *text, CURL *curl) {
 
     struct curl_slist *headers = NULL;
     headers = curl_slist_append(headers, "Content-Type: application/json");
-    headers = curl_slist_append(headers, "Authorization: Bearer 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");
+    headers = curl_slist_append(headers, "Authorization: Bearer");
 
     curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
     curl_easy_setopt(curl, CURLOPT_URL, "https://api.openai.com/v1/embeddings");
